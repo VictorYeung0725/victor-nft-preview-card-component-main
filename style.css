@@ -1,0 +1,140 @@
+/* ## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%) 
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: 'Outfit', serif;
+  background-color: hsl(217, 54%, 11%);
+  font-size: 18px;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  /* border: 5px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  width: 350px;
+  height: 600px;
+  /* border: 2px solid green; */
+  background-color: hsl(216, 50%, 16%) ;
+}
+
+.cardholder {
+  width: 85%;
+  height: 100%;
+  margin: 20px auto;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+  border-radius: 0.5rem;
+}
+
+img:hover{
+  background-color: hsl(178, 100%, 50%);
+  backdrop-filter: blur(5px);
+}
+
+h1{
+  color:hsl(0, 0%, 100%);
+  font-family: inherit;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+h1:hover{
+  cursor: pointer;
+  color:hsl(178, 100%, 50%); ;
+}
+.cardholder p{
+  margin-top: 1rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.price-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.ethPrice{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 1rem;
+  border-bottom: 1px;
+}
+
+.ethPrice img{
+  width: 0.6rem;
+  height: 1rem;
+
+}
+
+#current-price{
+  color: hsl(178, 100%, 50%);
+}
+
+.author{
+  display: flex;
+}
+
+.author img{
+  width: auto;
+  height: 25px;
+  margin-top: 1rem;
+}
+
+.author p {
+  margin-left: 0.5rem;
+}
+
+.author p:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
